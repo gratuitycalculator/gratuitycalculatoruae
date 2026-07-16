@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>How to Calculate Gratuity in UAE: A Simple Guide for Employees</title>
+
+  <meta name="description" content="Learn how to calculate gratuity in the UAE using your basic salary and service period. See the formula, examples, eligibility rules and common mistakes.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://gratuitycalculatoruae.ae/">
+
+  <style>
+    :root {
+      --primary: #0b5d4b;
+      --primary-dark: #063f34;
+      --accent: #d9a441;
+      --text: #17232b;
+      --muted: #5d6b73;
+      --white: #ffffff;
+      --soft: #f3f8f6;
+      --border: #dce8e3;
+      --shadow: 0 18px 50px rgba(9, 53, 43, 0.12);
+      --radius: 20px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      background: #f7faf9;
+      color: var(--text);
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Arial, sans-serif;
+      font-size: 17px;
+      line-height: 1.75;
+    }
+
+    a {
+      color: var(--primary);
+    }
+
+    .container {
+      width: min(1120px, calc(100% - 32px));
+      margin: auto;
+    }
+
+    /* Hero Section */
+
+    .hero {
+      position: relative;
+      overflow: hidden;
+      padding: 92px 0 84px;
+      color: #ffffff;
+      background:
+        radial-gradient(
+          circle at 85% 20%,
+          rgba(217, 164, 65, 0.24),
+          transparent 28%
+        ),
+        linear-gradient(135deg, var(--primary-dark), var(--primary));
+    }
+
+    .hero::after {
+      content: "";
+      position: absolute;
+      right: -90px;
+      bottom: -150px;
+      width: 420px;
+      height: 420px;
+      border: 1px solid rgba(255, 255, 255, 0.13);
+      border-radius: 50%;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 850px;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      padding: 7px 13px;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.09);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      max-width: 900px;
+      margin: 22px 0 18px;
+      font-size: clamp(2.25rem, 5vw, 4.4rem);
+      line-height: 1.08;
+      letter-spacing: -0.045em;
+    }
+
+    .hero p {
+      max-width: 760px;
+      margin: 0 0 30px;
+      color: #e7f2ee;
+      font-size: 1.12rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 52px;
+      padding: 13px 22px;
+      border-radius: 12px;
+      background: var(--accent);
+      color: #1e261f;
+      font-weight: 850;
+      text-decoration: none;
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+      transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 16px 34px rgba(0, 0, 0, 0.23);
+    }
+
+    .btn:focus-visible {
+      outline: 3px solid #ffffff;
+      outline-offset: 4px;
+    }
+
+    .trust-line {
+      margin-top: 18px !important;
+      color: #cfe1da !important;
+      font-size: 0.9rem !important;
+    }
+
+    /* Main Layout */
+
+    .layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 290px;
+      gap: 36px;
+      align-items: start;
+      padding: 56px 0 72px;
+    }
+
+    article {
+      padding: clamp(24px, 5vw, 52px);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--white);
+      box-shadow: var(--shadow);
+    }
+
+    article h2 {
+      margin: 2.3em 0 0.65em;
+      color: var(--primary-dark);
+      font-size: clamp(1.55rem, 3vw, 2.2rem);
+      line-height: 1.22;
+      letter-spacing: -0.025em;
+    }
+
+    article h3 {
+      margin: 1.7em 0 0.45em;
+      font-size: 1.22rem;
+      line-height: 1.35;
+    }
+
+    article p {
+      margin: 0 0 1.15em;
+    }
+
+    article ul,
+    article ol {
+      padding-left: 1.35rem;
+    }
+
+    article li {
+      margin: 0.48rem 0;
+    }
+
+    .lead {
+      color: #35444c;
+      font-size: 1.12rem;
+    }
+
+    /* Contents Box */
+
+    .toc {
+      margin: 28px 0;
+      padding: 22px 24px;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      background: var(--soft);
+    }
+
+    .toc strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--primary-dark);
+    }
+
+    .toc ol {
+      margin: 0;
+      columns: 2;
+      column-gap: 34px;
+    }
+
+    .toc a {
+      text-decoration: none;
+    }
+
+    .toc a:hover {
+      text-decoration: underline;
+    }
+
+    /* Information Boxes */
+
+    .note,
+    .formula,
+    .example,
+    .mid-cta,
+    .checklist {
+      margin: 28px 0;
+      border-radius: 16px;
+    }
+
+    .note {
+      padding: 20px 22px;
+      border-left: 5px solid var(--accent);
+      background: #fff9ec;
+    }
+
+    .formula {
+      padding: 24px;
+      color: #ffffff;
+      background: linear-gradient(135deg, var(--primary-dark), #10705b);
+    }
+
+    .formula code {
+      display: block;
+      margin: 9px 0;
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 1.06rem;
+      font-weight: 800;
+      white-space: normal;
+    }
+
+    .example {
+      padding: 24px;
+      border: 1px solid var(--border);
+      background: #fbfdfc;
+    }
+
+    .example h3 {
+      margin-top: 0;
+      color: var(--primary-dark);
+    }
+
+    .example strong {
+      color: var(--primary-dark);
+    }
+
+    /* Table */
+
+    .table-wrap {
+      margin: 24px 0;
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #ffffff;
+    }
+
+    th,
+    td {
+      padding: 15px 17px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--soft);
+      color: var(--primary-dark);
+      font-size: 0.95rem;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    /* Middle CTA */
+
+    .mid-cta {
+      padding: 34px;
+      text-align: center;
+      color: #ffffff;
+      background:
+        radial-gradient(
+          circle at 15% 15%,
+          rgba(217, 164, 65, 0.25),
+          transparent 32%
+        ),
+        var(--primary-dark);
+    }
+
+    .mid-cta h2 {
+      margin: 0 0 10px;
+      color: #ffffff;
+    }
+
+    .mid-cta p {
+      max-width: 620px;
+      margin: 0 auto 22px;
+      color: #dcece6;
+    }
+
+    .checklist {
+      padding: 24px;
+      border: 1px solid var(--border);
+      background: var(--soft);
+    }
+
+    /* Sidebar */
+
+    aside {
+      position: sticky;
+      top: 22px;
+    }
+
+    .side-card {
+      margin-bottom: 20px;
+      padding: 24px;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      background: #ffffff;
+      box-shadow: 0 12px 35px rgba(9, 53, 43, 0.08);
+    }
+
+    .side-card h2 {
+      margin: 0 0 10px;
+      color: var(--primary-dark);
+      font-size: 1.18rem;
+    }
+
+    .side-card p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.95rem;
+    }
+
+    .side-card a {
+      display: block;
+      margin-top: 12px;
+      font-weight: 800;
+      text-decoration: none;
+    }
+
+    .sources {
+      color: var(--muted);
+      font-size: 0.93rem;
+    }
+
+    .sources a {
+      word-break: break-word;
+    }
+
+    /* Footer */
+
+    footer {
+      padding: 54px 0 26px;
+      color: #dce9e5;
+      background: #062f28;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 0.7fr 0.9fr;
+      gap: 34px;
+    }
+
+    footer h2,
+    footer h3 {
+      margin-top: 0;
+      color: #ffffff;
+    }
+
+    footer p {
+      color: #bcd0c9;
+    }
+
+    footer a {
+      color: #ecf6f2;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    footer ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    footer li {
+      margin: 8px 0;
+    }
+
+    .footer-note {
+      font-size: 0.88rem;
+    }
+
+    .copyright {
+      margin-top: 34px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.13);
+      text-align: center;
+      color: #9fbbb1;
+      font-size: 0.88rem;
+    }
+
+    /* Responsive Design */
+
+    @media (max-width: 900px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      aside {
+        position: static;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    @media (max-width: 640px) {
+      body {
+        font-size: 16px;
+      }
+
+      .hero {
+        padding: 66px 0 62px;
+      }
+
+      .toc ol {
+        columns: 1;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+
+      article {
+        border-radius: 16px;
+      }
+
+      th,
+      td {
+        padding: 13px;
+      }
+
+      .btn {
+        width: 100%;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Calculate Gratuity in UAE: A Simple Guide for Employees",
+    "description": "A simple employee guide to UAE gratuity eligibility, formulas, examples, deductions and final settlement checks.",
+    "dateModified": "2026-07-16",
+    "mainEntityOfPage": "https://gratuitycalculatoruae.ae/",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Gratuity Calculator UAE",
+      "url": "https://gratuitycalculatoruae.ae/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Hero Section -->
+
+  <header class="hero">
+    <div class="container hero-content">
+
+      <span class="eyebrow">UAE End-of-Service Guide</span>
+
+      <h1>
+        How to Calculate Gratuity in UAE: A Simple Guide for Employees
+      </h1>
+
+      <p>
+        Understand the basic salary rule, service-year formula,
+        unpaid-leave adjustment and final settlement process with
+        clear examples in UAE dirhams.
+      </p>
+
+      <a
+        class="btn"
+        href="https://gratuitycalculatoruae.ae/"
+        target="_blank"
+        rel="noopener"
+      >
+        Gratuity Calculator UAE
+      </a>
+
+      <p class="trust-line">
+        Free informational estimate • Simple formula breakdown • No legal advice
+      </p>
+
+    </div>
+  </header>
+
+  <!-- Main Content -->
+
+  <main class="container layout">
+
+    <article>
+
+      <p class="lead">
+        Leaving a job can be stressful, especially when you are unsure how
+        much money should appear in your final settlement. For many
+        private-sector employees, gratuity is an important part of that
+        payment. It is a statutory end-of-service benefit normally calculated
+        from the employee’s last basic salary and eligible period of service.
+      </p>
+
+      <p>
+        This guide explains how to calculate gratuity in the UAE in plain
+        English. It covers who may qualify, which salary figure to use, how the
+        21-day and 30-day rules work, how partial years and unpaid leave can
+        affect the result, and what to check before accepting a final
+        settlement. The examples are estimates for general understanding.
+        Your employment category, applicable jurisdiction, workplace scheme,
+        contract terms or a legal dispute may change the final amount.
+      </p>
+
+      <!-- Table of Contents -->
+
+      <nav class="toc" aria-label="Article contents">
+
+        <strong>In this guide</strong>
+
+        <ol>
+          <li><a href="#meaning">What gratuity means</a></li>
+          <li><a href="#eligibility">Who is eligible</a></li>
+          <li><a href="#salary">Which salary is used</a></li>
+          <li><a href="#formula">UAE gratuity formula</a></li>
+          <li><a href="#examples">Calculation examples</a></li>
+          <li><a href="#adjustments">Important adjustments</a></li>
+          <li><a href="#settlement">Final settlement checks</a></li>
+          <li><a href="#mistakes">Mistakes to avoid</a></li>
+        </ol>
+
+      </nav>
+
+      <h2 id="meaning">What Is Gratuity in the UAE?</h2>
+
+      <p>
+        Gratuity, also called an end-of-service benefit, is an amount that an
+        eligible employer pays when an employment relationship ends. It is
+        separate from the employee’s normal monthly salary. Depending on the
+        circumstances, a final settlement may also include unpaid wages,
+        payment for accrued leave, notice-period compensation or other
+        contractual amounts.
+      </p>
+
+      <p>
+        Under the general UAE private-sector framework, the standard gratuity
+        formula applies to eligible full-time foreign workers. UAE nationals
+        are generally covered through the legislation governing pensions and
+        social security. Domestic workers and employees in some financial free
+        zones or special arrangements may follow different rules, so they
+        should not assume that every formula on the internet applies to them.
+      </p>
+
+      <div class="note">
+        <strong>Important:</strong>
+        This article explains the general private-sector calculation under
+        Federal Decree-Law No. 33 of 2021. Always check whether your employer
+        is regulated by MOHRE, a special free-zone authority, a pension system
+        or an approved alternative end-of-service savings scheme.
+      </div>
+
+      <h2 id="eligibility">Who Is Eligible for UAE Gratuity?</h2>
+
+      <p>
+        A full-time foreign worker generally needs to complete at least one
+        year of continuous service to qualify under the standard rule. A
+        worker who leaves before completing one full year normally does not
+        receive statutory gratuity under this formula. Once the first year has
+        been completed, an eligible employee may also receive a proportionate
+        amount for an additional part of a year.
+      </p>
+
+      <p>
+        For example, an employee who completes three years and six months may
+        have the extra six months counted proportionately. However, unpaid
+        days of absence are not included in the service period used for the
+        gratuity calculation. This is why the dates shown on an employment
+        certificate may not always produce the same service length as the
+        final calculation.
+      </p>
+
+      <p>
+        Part-time and job-sharing workers can also have an entitlement
+        calculated by a proportional method. The general approach compares
+        the annual working hours in the employee’s contract with the annual
+        hours of a comparable full-time contract, converts that comparison
+        into a percentage and applies it to the full-time gratuity value.
+      </p>
+
+      <h2 id="salary">
+        Is Gratuity Calculated on Basic Salary or Total Salary?
+      </h2>
+
+      <p>
+        The standard calculation uses the employee’s last basic wage, not the
+        total monthly package. This distinction is one of the most common
+        sources of confusion. Your total salary may include housing allowance,
+        transport allowance, commission, phone allowance, education support
+        or other benefits. These amounts are not normally added to the
+        basic-wage figure for the standard gratuity formula.
+      </p>
+
+      <p>
+        Suppose your total monthly package is AED 10,000, made up of AED 6,500
+        basic salary and AED 3,500 in allowances. The starting figure for a
+        normal gratuity estimate would be AED 6,500, not AED 10,000. Check your
+        current employment contract, salary certificate and payslips to
+        confirm the final basic salary recorded by your employer.
+      </p>
+
+      <h2 id="formula">UAE Gratuity Calculation Formula</h2>
+
+      <p>
+        The calculation begins by finding the daily basic wage. For a
+        monthly-paid employee, a commonly used calculation is the last monthly
+        basic salary divided by 30. The number of gratuity days then depends
+        on the eligible service period.
+      </p>
+
+      <div class="formula" aria-label="UAE gratuity formula">
+
+        <code>
+          Daily basic wage = Last monthly basic salary ÷ 30
+        </code>
+
+        <code>
+          First 5 years = 21 days of basic wage for each eligible year
+        </code>
+
+        <code>
+          After 5 years = 30 days of basic wage for each additional year
+        </code>
+
+      </div>
+
+      <div class="table-wrap">
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>Eligible service</th>
+              <th>Calculation rate</th>
+              <th>Main point</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+            <tr>
+              <td>Less than 1 year</td>
+
+              <td>
+                No statutory gratuity under the standard formula
+              </td>
+
+              <td>
+                The employee has not completed the minimum service period.
+              </td>
+            </tr>
+
+            <tr>
+              <td>1 to 5 years</td>
+
+              <td>
+                21 days of basic wage per year
+              </td>
+
+              <td>
+                Eligible partial years after the first year are calculated
+                proportionately.
+              </td>
+            </tr>
+
+            <tr>
+              <td>More than 5 years</td>
+
+              <td>
+                21 days per year for the first 5 years, then 30 days per
+                additional year
+              </td>
+
+              <td>
+                The higher rate applies only to service beyond the first
+                five years.
+              </td>
+            </tr>
+
+          </tbody>
+
+        </table>
+
+      </div>
+
+      <p>
+        The total end-of-service gratuity for an eligible foreign worker under
+        the standard framework cannot exceed two years’ wage. Employers may
+        also deduct amounts that are legally payable under the law or a
+        judgment, subject to the applicable conditions and procedures.
+      </p>
+
+      <h2 id="examples">Simple UAE Gratuity Calculation Examples</h2>
+
+      <div class="example">
+
+        <h3>Example 1: Four Years of Service</h3>
+
+        <p>
+          <strong>Last basic salary:</strong>
+          AED 6,000 per month
+          <br>
+
+          <strong>Eligible service:</strong>
+          4 years
+          <br>
+
+          <strong>Daily basic wage:</strong>
+          AED 6,000 ÷ 30 = AED 200
+        </p>
+
+        <p>
+          Gratuity days are 21 × 4 = 84 days. The estimated gratuity is
+          84 × AED 200 = <strong>AED 16,800</strong>.
+        </p>
+
+      </div>
+
+      <div class="example">
+
+        <h3>Example 2: Eight Years of Service</h3>
+
+        <p>
+          <strong>Last basic salary:</strong>
+          AED 9,000 per month
+          <br>
+
+          <strong>Eligible service:</strong>
+          8 years
+          <br>
+
+          <strong>Daily basic wage:</strong>
+          AED 9,000 ÷ 30 = AED 300
+        </p>
+
+        <p>
+          For the first five years: 21 × 5 × AED 300 = AED 31,500.
+          For the next three years: 30 × 3 × AED 300 = AED 27,000.
+          The estimated total is <strong>AED 58,500</strong>.
+        </p>
+
+      </div>
+
+      <div class="example">
+
+        <h3>Example 3: Three Years and Six Months</h3>
+
+        <p>
+          <strong>Last basic salary:</strong>
+          AED 4,500 per month
+          <br>
+
+          <strong>Eligible service:</strong>
+          3.5 years
+          <br>
+
+          <strong>Daily basic wage:</strong>
+          AED 4,500 ÷ 30 = AED 150
+        </p>
+
+        <p>
+          The estimated gratuity days are 21 × 3.5 = 73.5 days.
+          The estimated amount is 73.5 × AED 150 =
+          <strong>AED 11,025</strong>, before any valid adjustment or
+          deduction.
+        </p>
+
+      </div>
+
+      <!-- Middle CTA -->
+
+      <section class="mid-cta" aria-label="Gratuity calculator call to action">
+
+        <h2>Check Your Estimated End-of-Service Amount</h2>
+
+        <p>
+          Enter your basic salary and employment dates to get a quick
+          independent estimate, then compare the breakdown with your
+          employer’s final settlement.
+        </p>
+
+        <a
+          class="btn"
+          href="https://gratuitycalculatoruae.ae/"
+          target="_blank"
+          rel="noopener"
+        >
+          Mohre Gratuity Calculator
+        </a>
+
+      </section>
+
+      <h2 id="adjustments">
+        Factors That Can Change Your Gratuity Estimate
+      </h2>
+
+      <h3>Unpaid Leave and Unpaid Absence</h3>
+
+      <p>
+        Unpaid days are excluded from the service term used to calculate
+        gratuity. If you took a long period of approved unpaid leave, or had
+        unpaid absence recorded by the employer, simply counting the calendar
+        time between your joining date and last working date may overstate the
+        result. Gather leave records and ask HR for the service-day
+        calculation.
+      </p>
+
+      <h3>Part-Time or Job-Sharing Work</h3>
+
+      <p>
+        A part-time worker’s result is normally adjusted according to the
+        ratio between contracted annual working hours and the annual hours of
+        an equivalent full-time contract. Because working patterns differ,
+        employees should use the hours written in their contracts rather than
+        guessing a percentage from the number of days worked each week.
+      </p>
+
+      <h3>Alternative End-of-Service Savings Scheme</h3>
+
+      <p>
+        The UAE also has a voluntary alternative system in which participating
+        employers register selected employees and make contributions to
+        approved investment funds. Entitlements earned before registration
+        are preserved under the applicable rules, while later benefits are
+        handled through the savings scheme.
+      </p>
+
+      <p>
+        If your employer participates, request a statement showing the
+        registration date, contributions and preserved pre-scheme
+        entitlement. Do not use the traditional gratuity formula for the
+        entire employment period without checking when the employee entered
+        the savings scheme.
+      </p>
+
+      <h3>Special Jurisdictions and Employee Categories</h3>
+
+      <p>
+        DIFC, ADGM, domestic work, government employment and pension-covered
+        employment may involve different systems or additional rules. A
+        calculator designed for the general MOHRE-regulated private sector
+        should not be treated as a final legal calculation for every employee
+        in the country.
+      </p>
+
+      <h3>Resignation and Termination</h3>
+
+      <p>
+        Many older online articles still show reduced fractions such as
+        one-third or two-thirds for some resignations. Those explanations
+        often relate to the previous labour-law structure. The current Article
+        51 formula focuses on eligible service, last basic wage and the
+        21-day or 30-day bands.
+      </p>
+
+      <p>
+        Even so, the way employment ended can affect other parts of a
+        settlement, including notice pay, compensation, lawful deductions or
+        a dispute. Review current law instead of relying on an old article,
+        social-media post or saved screenshot.
+      </p>
+
+      <h2 id="settlement">
+        What Should Be Included in a Final Settlement?
+      </h2>
+
+      <p>
+        Gratuity is only one part of a final settlement. Depending on the
+        employee’s records and the reason the contract ended, the statement
+        may also show salary up to the last working day, cash for eligible
+        unused annual leave, notice-period pay, commissions already earned,
+        reimbursements, contractual benefits and lawful deductions.
+      </p>
+
+      <p>
+        Under Article 53 of the UAE Labour Law, the employer must pay the
+        worker’s wages and other end-of-contract entitlements within 14 days
+        from the contract end date. Before signing a document stating that all
+        dues have been received, compare the settlement with your contract,
+        payslips, leave balance, resignation or termination letter and
+        attendance records.
+      </p>
+
+      <div class="checklist">
+
+        <strong>Final settlement checklist</strong>
+
+        <ul>
+          <li>
+            Confirm the joining date and official contract end date.
+          </li>
+
+          <li>
+            Check the last monthly basic salary, not only the total package.
+          </li>
+
+          <li>
+            Review unpaid-leave and absence deductions from service.
+          </li>
+
+          <li>
+            Calculate the first five years and later years separately.
+          </li>
+
+          <li>
+            Add any eligible fraction of a year after completing the first
+            year.
+          </li>
+
+          <li>
+            Check leave pay, outstanding wages and notice pay separately.
+          </li>
+
+          <li>
+            Ask for a written explanation of every deduction.
+          </li>
+        </ul>
+
+      </div>
+
+      <h2 id="mistakes">
+        Common Gratuity Calculation Mistakes to Avoid
+      </h2>
+
+      <p>
+        The first mistake is using gross salary instead of basic salary. This
+        can produce an estimate that is much higher than the statutory figure.
+        The second is applying 30 days to every year when the employee has
+        worked for more than five years. The first five years remain
+        calculated at 21 days per year; only the additional years use 30 days.
+      </p>
+
+      <p>
+        Another mistake is ignoring unpaid leave. Calendar service and
+        eligible service may differ. Employees also sometimes round the
+        service period too early, use an outdated resignation formula, or
+        assume that the calculator result includes annual-leave pay and notice
+        compensation.
+      </p>
+
+      <p>
+        A gratuity calculator usually estimates gratuity only unless it
+        clearly includes other settlement items. Keep gratuity, unused leave,
+        unpaid salary and notice-period compensation as separate calculations
+        when checking your final settlement.
+      </p>
+
+      <p>
+        Finally, do not depend on verbal figures. Request the calculation in
+        writing. A useful breakdown should show the basic salary, daily wage,
+        eligible service period, number of gratuity days, subtotal for each
+        service band and any deductions.
+      </p>
+
+      <h2>What to Do If the Amount Looks Wrong</h2>
+
+      <p>
+        Start by asking HR or payroll for a detailed written calculation.
+        Compare it with your signed employment contract and salary records.
+        Small differences may come from exact service days, unpaid leave, a
+        salary change, part-time hours or a lawful deduction.
+      </p>
+
+      <p>
+        If the issue is not resolved, contact the authority responsible for
+        your employment. MOHRE provides channels for private-sector labour
+        complaints, while an employee in a special free zone may need to
+        contact that zone’s authority.
+      </p>
+
+      <p>
+        Keep copies of the contract, payslips, bank statements, leave records,
+        correspondence and the final settlement sheet. For a high-value or
+        disputed claim, obtain advice from a qualified UAE employment
+        professional.
+      </p>
+
+      <h2>Final Thoughts</h2>
+
+      <p>
+        To estimate UAE gratuity, begin with the last basic monthly salary,
+        divide it by 30, and apply 21 days per year for the first five eligible
+        years and 30 days per year after that. Confirm that at least one year
+        of continuous service has been completed, include eligible partial
+        years proportionately, remove unpaid days from the service term and
+        remember the overall two-year-wage cap.
+      </p>
+
+      <p>
+        An online calculator can make the arithmetic easier, but the result is
+        only as accurate as the information entered. Use the official dates
+        and salary figures from your records, review all final settlement
+        components, and verify special rules that may apply to your workplace
+        or employment category.
+      </p>
+
+      <!-- Official Sources -->
+
+      <section class="sources">
+
+        <h2>Official Sources</h2>
+
+        <ul>
+
+          <li>
+            <a
+              href="https://mohre.gov.ae/en/guidance-and-awareness-portal-new/employee-companies/dear-worker-know-your-rights"
+              target="_blank"
+              rel="noopener"
+            >
+              MOHRE: Dear Worker – Know Your Rights
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://u.ae/en/information-and-services/jobs/employment-in-the-private-sector/end-of-service-benefits-for-employees-in-the-private-sector"
+              target="_blank"
+              rel="noopener"
+            >
+              UAE Government: End-of-Service Benefits for Private-Sector
+              Workers
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="https://mohre.gov.ae/assets/download/8cd7cf08/Federal%20Decree-Law%20No.%2033%20of%202021%20Regarding%20the%20Regulation%20of%20Employment%20Relationship%20and%20its%20amendments.pdf.aspx"
+              target="_blank"
+              rel="noopener"
+            >
+              Federal Decree-Law No. 33 of 2021 and Amendments
+            </a>
+          </li>
+
+        </ul>
+
+      </section>
+
+    </article>
+
+    <!-- Sidebar -->
+
+    <aside aria-label="Helpful information">
+
+      <div class="side-card">
+
+        <h2>Quick Formula</h2>
+
+        <p>
+          Basic salary ÷ 30, then multiply the daily wage by the applicable
+          gratuity days.
+        </p>
+
+        <a href="#formula">
+          View the full formula →
+        </a>
+
+      </div>
+
+      <div class="side-card">
+
+        <h2>Have Your Records Ready</h2>
+
+        <p>
+          Use your contract, latest payslip, joining date, final working date
+          and unpaid-leave record.
+        </p>
+
+      </div>
+
+      <div class="side-card">
+
+        <h2>Need an Estimate?</h2>
+
+        <p>
+          Use the calculator, then compare its breakdown with the written
+          statement from HR.
+        </p>
+
+        <a
+          href="https://gratuitycalculatoruae.ae/"
+          target="_blank"
+          rel="noopener"
+        >
+          Open calculator →
+        </a>
+
+      </div>
+
+    </aside>
+
+  </main>
+
+  <!-- Footer -->
+
+  <footer>
+
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <section>
+
+          <h2>Gratuity Calculator UAE</h2>
+
+          <p>
+            Clear tools and practical guides that help UAE employees
+            understand estimated end-of-service benefits and review final
+            settlement figures with confidence.
+          </p>
+
+        </section>
+
+        <nav aria-label="Footer navigation">
+
+          <h3>Quick Links</h3>
+
+          <ul>
+
+            <li>
+              <a href="https://gratuitycalculatoruae.ae/">
+                Home
+              </a>
+            </li>
+
+            <li>
+              <a href="https://gratuitycalculatoruae.ae/">
+                Gratuity Calculator
+              </a>
+            </li>
+
+            <li>
+              <a href="#formula">
+                Calculation Formula
+              </a>
+            </li>
+
+            <li>
+              <a href="#settlement">
+                Settlement Checklist
+              </a>
+            </li>
+
+          </ul>
+
+        </nav>
+
+        <section>
+
+          <h3>Important Notice</h3>
+
+          <p class="footer-note">
+            This website is an independent informational resource and is not
+            affiliated with MOHRE or any UAE government authority. Calculator
+            results are estimates, not legal or financial advice. Rules and
+            individual circumstances may change the final entitlement.
+          </p>
+
+        </section>
+
+      </div>
+
+      <div class="copyright">
+        © 2026 Gratuity Calculator UAE. All rights reserved.
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
